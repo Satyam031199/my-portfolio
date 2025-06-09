@@ -61,7 +61,7 @@ export const contactMethods = [
     icon: MapPin,
     title: "Location",
     value: "Noida, India",
-    href: "#",
+    href: "https://www.google.com/maps/place/Sector+76,+Noida,+Uttar+Pradesh/@28.5679743,77.3803072,17z/data=!3m1!4b1!4m6!3m5!1s0x390cef5e668f8297:0x5ec904a8d2d36b83!8m2!3d28.5682139!4d77.3834998!16s%2Fg%2F1tk6ywk7?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D",
     color: "from-purple-500 to-purple-600",
   },
 ];
@@ -70,19 +70,19 @@ export const socialLinks = [
   {
     icon: "/icons/linkedin.png",
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/satyam-chaturvedi-031199",
     color: "hover:text-blue-600",
   },
   {
     icon: "/icons/github.png",
     name: "GitHub",
-    href: "#",
+    href: "https://github.com/Satyam031199",
     color: "hover:text-gray-800",
   },
   {
     icon: "/icons/instagram.png",
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/satyam.xd",
     color: "hover:text-blue-500",
   },
 ];
