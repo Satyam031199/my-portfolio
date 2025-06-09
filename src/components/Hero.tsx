@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { ArrowDown } from "lucide-react";
 import useDownloadPdf from "@/hooks/useDownloadPdf";
 import { TypewriterEffectSmooth } from "./ui/typewritter-effect";
 
@@ -9,12 +8,6 @@ const Hero = () => {
   useEffect(() => {
     setIsVisible(true);
   }, []);
-
-  const scrollToAbout = () => {
-    document.getElementById("about")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
   const words = [
     {
       text: "Hi,",
@@ -79,9 +72,9 @@ const Hero = () => {
           }`}
         >
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-lg font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-200">
+            <a href="/projects" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 text-white rounded-lg font-medium hover:shadow-lg transform hover:scale-105 transition-all duration-200">
               View My Work
-            </button>
+            </a>
             <button
               className="px-8 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 rounded-lg font-medium hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200"
               onClick={() =>
