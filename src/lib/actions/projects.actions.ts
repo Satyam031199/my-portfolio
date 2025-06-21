@@ -6,7 +6,7 @@ type ProjectFormData = z.infer<typeof projectSchema>;
 
 export const getAllProjects = async () => {
   const supabase = createSupabaseClient;
-  const { data, error } = await supabase.from("projects").select();
+  const { data, error } = await supabase.from("projects").select().order('id', { ascending: false });
   console.log(data);
   if (error) throw new Error(error?.message);
   return data;
